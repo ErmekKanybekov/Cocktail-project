@@ -1,0 +1,74 @@
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+
+body {
+    text-align: center;
+    margin: 0;
+    font-family: roboto, sans-serif;
+    background-color: rgb(26, 29, 22);
+    color: white;
+    padding: 15px;
+}
+
+
+.container {
+    width: fit-content;
+    max-width: 1000px;
+    margin: 20px auto;
+    display: flex;
+    padding: 20px;
+    border: 2px solid coral;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.infoIMG {
+    width: 350px;
+    display: block;
+    border-radius: 10px;
+    height: fit-content;
+}
+
+.infoDiv {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+}
+
+.ingridients {
+    color: coral;
+    font-weight: bold;
+    margin: 0;
+}
+
+.drinkInfoName {
+    margin: 0;
+}
+
+.goBackButton{
+    background-color: coral;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.goBackButton:hover {
+    background-color: rgb(227, 196, 117);
+    color: rgb(12, 10, 10);
+}
+
+@media (max-width:650px) {
+    .container {
+        flex-direction: column;
+        width: 350px;
+        overflow: visible;
+    }
+
+    .infoIMG {
+        width: 100%;
+    }
+}

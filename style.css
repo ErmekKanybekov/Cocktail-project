@@ -1,0 +1,196 @@
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+body {
+    text-align: center;
+    margin: 0;
+    font-family: roboto, sans-serif;
+}
+
+.team6 {
+    margin: 0;
+    color: white;
+}
+
+.menu {
+    height: 150vh;
+    background-image: url('https://images.unsplash.com/photo-1575444758702-4a6b9222336e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+ul {
+    
+}
+
+/* NAV BAR-------------------- */
+
+.navBar {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+    padding: 15px 35px 0;
+}
+
+.p-NavBar {
+    line-height: 74px;
+    color: white;
+    font-weight: bold;
+    transition: all 0.35s;
+    cursor: pointer;
+}
+
+.p-NavBar:hover {
+    border-color: #f1ff5c;
+    color: rgb(158, 194, 206);
+    text-shadow: 3px 1px 3px rgb(231, 255, 192),
+    -2px 1px 30px rgb(231, 255, 192);
+    transform: translateY(-0.25em);
+    cursor: pointer;
+}
+
+.navimages {
+    display: flex;
+    transition: all 0.35s;
+    overflow: hidden;
+    border-radius: 35px;
+}
+
+.navimages:hover {
+    border-color: #f1ff5c;
+    color: white;
+    box-shadow: 0 0.5em 0.5em -0.4em #f1ff5c;
+    transform: translateY(-0.35em);
+    cursor: pointer;
+}
+
+.img-NavBar {
+    width: 150px;
+    margin: 0;
+    display: block;
+}
+
+.img-NavBar:hover {
+    /* border-radius: 35px; */
+}
+
+
+/* SEARCHING SECTION */
+
+.searching {
+    background-color: black;
+    margin-bottom: -200px;
+    min-height: 150vh;
+}
+
+#searchBar {
+    padding: 10px;
+}
+
+.searchWrapper {
+    text-align: center;
+    display: flex;
+    margin: 0 auto;
+    width: fit-content;
+    justify-content: center;
+}
+
+.bar6 {
+    color: white;
+    margin: 0 auto 50px;
+    text-shadow: 3px 6px 10px pink,
+    -5px -5px 10px pink;
+}
+
+.drinkLI {
+    list-style-type: none;
+    border: 2px solid #ffa260;
+    display: inline-block;
+    border-radius: 10px;
+    margin: 15px 25px;
+    position: relative;
+    cursor: pointer;
+    background-color: rgb(201, 179, 179);
+    transition: all 0.35s;
+}
+
+#drinkList {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.drinkLI:hover {
+    border-color: #f1ff5c;
+    color: white;
+    box-shadow: 0 0.5em 0.5em -0.4em #f1ff5c;
+    transform: translateY(-0.35em);
+    cursor: pointer;
+}
+
+.drinkIMG {
+    width: 250px;
+    display: block;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.drinkName {
+    color: green;
+    font-weight: bold;
+}
+
+.drinkPrice {
+    color: red;
+    font-size: 0.8rem;
+}
+
+.drinkCategory {
+    position: absolute;
+    right: 8px;
+    top: 10px;
+    background-color: coral;
+    border-top-left-radius:8px ;
+    padding: 0 5px;
+    font-size: 0.8rem;
+}
+
+.notFound {
+    color: white;
+    list-style: none;
+}
+
+.redSpan {
+    color: lightcoral;
+    font-weight: bold;
+}
+
+@media (max-width:720px) {
+    .navBar {
+        flex-direction: column;
+    }
+    .navimages {
+        margin: 0 auto;
+    }
+    .p-NavBar {
+        margin: 0;
+    }
+    body {
+        text-align: center;
+    }
+
+    .drinkLI {
+        margin: 25px;
+        justify-content: space-around;
+    }
+    #searchBar {
+        display: block;
+        margin: auto;
+    }
+}
