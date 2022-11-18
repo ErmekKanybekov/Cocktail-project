@@ -72,3 +72,39 @@ body {
         width: 100%;
     }
 }
+/* ADD TO CART -------------------- */
+.divAddToCart {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.addToCart {
+    border-radius: 15px;
+    margin: 5px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    cursor: pointer;
+    font-size: 0.7rem;
+    max-width: 250px;
+    transition: all 0.3s;
+}
+
+.addToCart:hover {
+    color: rgb(20, 12, 12);
+}
+
+#addToCart {
+    background-color: gold;
+}
+
+#addToCart:hover {
+    background-color: rgb(198, 183, 98);
+}
+
+#buyNow {
+    background-color: coral;
+}
+#buyNow:hover {
+    background-color: rgb(246, 149, 114);
+}

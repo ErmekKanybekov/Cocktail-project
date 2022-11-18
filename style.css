@@ -1,4 +1,6 @@
-*, ::after, ::before {
+*,
+::after,
+::before {
     box-sizing: border-box;
 }
 
@@ -11,6 +13,7 @@ body {
     text-align: center;
     margin: 0;
     font-family: roboto, sans-serif;
+    position: relative;
 }
 
 .team6 {
@@ -25,9 +28,7 @@ body {
     background-size: cover;
 }
 
-ul {
-    
-}
+ul {}
 
 /* NAV BAR-------------------- */
 
@@ -50,7 +51,7 @@ ul {
     border-color: #f1ff5c;
     color: rgb(158, 194, 206);
     text-shadow: 3px 1px 3px rgb(231, 255, 192),
-    -2px 1px 30px rgb(231, 255, 192);
+        -2px 1px 30px rgb(231, 255, 192);
     transform: translateY(-0.25em);
     cursor: pointer;
 }
@@ -66,7 +67,7 @@ ul {
     border-color: #f1ff5c;
     color: white;
     box-shadow: 0 0.5em 0.5em -0.4em #f1ff5c;
-    transform: translateY(-0.35em);
+    transform: translateY(-0.25em);
     cursor: pointer;
 }
 
@@ -104,13 +105,13 @@ ul {
 .bar6 {
     color: white;
     margin: 0 auto 50px;
-    text-shadow: 3px 6px 10px pink,
-    -5px -5px 10px pink;
+    text-shadow: 3px 6px 10px red,
+        -5px -5px 10px red;
 }
 
 .drinkLI {
     list-style-type: none;
-    border: 2px solid #ffa260;
+    border: 2px solid white;
     display: inline-block;
     border-radius: 10px;
     margin: 15px 25px;
@@ -127,9 +128,10 @@ ul {
 }
 
 .drinkLI:hover {
-    border-color: #f1ff5c;
-    color: white;
-    box-shadow: 0 0.5em 0.5em -0.4em #f1ff5c;
+    border-color: red;
+    color: red;
+    font-size: large;
+    box-shadow: 0 0.1rem 0.3rem 0.1rem red;
     transform: translateY(-0.35em);
     cursor: pointer;
 }
@@ -144,19 +146,20 @@ ul {
 .drinkName {
     color: green;
     font-weight: bold;
+    margin: 5px;
 }
 
 .drinkPrice {
-    color: red;
     font-size: 0.8rem;
+    margin: 5px;
 }
 
 .drinkCategory {
     position: absolute;
     right: 8px;
     top: 10px;
-    background-color: coral;
-    border-top-left-radius:8px ;
+    background-color: white;
+    border-top-left-radius: 8px;
     padding: 0 5px;
     font-size: 0.8rem;
 }
@@ -175,12 +178,15 @@ ul {
     .navBar {
         flex-direction: column;
     }
+
     .navimages {
         margin: 0 auto;
     }
+
     .p-NavBar {
         margin: 0;
     }
+
     body {
         text-align: center;
     }
@@ -189,8 +195,96 @@ ul {
         margin: 25px;
         justify-content: space-around;
     }
+
     #searchBar {
         display: block;
         margin: auto;
     }
+}
+
+/* ADD TO CART -------------------- */
+.divAddToCart {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.addToCart {
+    border: transparent;
+    border-radius: 15px;
+    margin: 5px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    cursor: pointer;
+    font-size: 0.7rem;
+    max-width: 250px;
+    transition: background-color 0.3s;
+}
+
+.addToCart:hover {
+    color: rgb(20, 12, 12);
+}
+
+#addToCart {
+    background-color: gold;
+}
+
+#addToCart:hover {
+    background-color: rgb(183, 237, 183);
+    font-weight: bold;
+}
+
+.fa-solid {
+    color: white;
+    font-size: 1rem;
+    position: fixed;
+    right: 10px;
+    top: 55px;
+    display: inline-block;
+    z-index: 3;
+    
+}
+
+.cartIcon {
+    font-size: 0.4rem;
+}
+
+/* SORT BY CATEGORY  ----------------------------*/
+
+.sortByCategory {
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background-color: black;
+    padding: 0;
+}
+
+.tabs {
+    display: flex;
+    padding: 0;
+    margin: 35px 10px;
+}
+
+.tab {
+    border: 2px solid white;
+    padding: 5px;
+    width: 100%;
+    min-width: 150px;
+    list-style: none;
+    margin: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.tab:hover {
+    border-color: red;
+    color: white;
+    box-shadow: inset 0 0 0.4rem 0.1rem red;
+    color: red;
+}
+
+
+.itemsInCart {
+    font-size: 0.8rem;
 }

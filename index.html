@@ -10,35 +10,52 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/8432916a8e.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+  <i class="fa-solid fa-cart-arrow-down"> <br> <span class="itemsInCart"> </span><span class="cartIcon">in cart</span>
+  <p class="totalInCart"></p>
+  </i>
 
 
   <section class="menu">
     <!--Nav Bar-->
     <div class="navBar">
-      <p  class="shop p-NavBar"><a href="#bar6id">SHOP</a></p>
+      <p class="shop p-NavBar"><a href="#bar6id">SHOP</a></p>
       <p class="article p-NavBar"><a href="#bar6id">ARTICLE</a></p>
-      <div class="navimages"><a href="#bar6id" class="navimages">
-      <img class="bar img-NavBar" src="https://images.unsplash.com/photo-1468056961052-15507578a50d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80" alt="bar" srcset="">
-      <img class="bar-6 img-NavBar" src="https://images.unsplash.com/photo-1484335629320-0e089b87a106?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=763&q=80" alt="bar6" srcset="">
-    </a>
-    </div>
+      <div class="navimages">
+        <a href="#bar6id" class="navimages">
+          <img class="bar img-NavBar"
+            src="https://images.unsplash.com/photo-1468056961052-15507578a50d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+            alt="bar" srcset="">
+          <img class="bar-6 img-NavBar"
+            src="https://images.unsplash.com/photo-1484335629320-0e089b87a106?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=763&q=80"
+            alt="bar6" srcset="">
+        </a>
+      </div>
       <p class="about p-NavBar"><a href="#bar6id">ABOUT</a></p>
       <p class="contact p-NavBar"><a href="#bar6id">CONTACT</a></p>
     </div>
   </section>
-    <!-- search -->
-    <section class="searching">
-      <h1 id="bar6id" class="bar6">Bar #6</h1>
+  <!-- search -->
+  <section class="searching">
+    <h1 id="bar6id" class="bar6">Bar #6</h1>
     <div class="searchWrapper">
-        <input 
-        id="searchBar" 
-        type="search" 
-        placeholder="Search" 
-        name="searchBar"/>
+      <input id="searchBar" type="search" placeholder="Search" name="searchBar" />
     </div>
+    <!-- SORT BY CATEGORY  -->
+    <section class="sortByCategory">
+      <ul class="tabs">
+        <li class="tab" id="All">All</li>
+        <li class="tab" id="Cocktail">Cocktail</li>
+        <li class="tab" id="Shot">Shot</li>
+        <li class="tab" id="Ordinary Drink">Ordinary Drink</li>
+        <li class="tab" id="Coffee / Tea">Coffee / Tea</li>
+        <li class="tab" id="Other/Unknown">Other/Unknown</li>
+      </ul>
+    </section>
+
     <!-- menu items -->
     <ul id="drinkList"></ul>
   </section>
