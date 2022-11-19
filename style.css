@@ -1,0 +1,113 @@
+body {
+    background-color: #f1f5f8;
+    border: 1px solid;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  input {
+    text-align: center;
+    width: 200px;
+    padding: 10px;
+    margin: 10px;
+    align-items: center;
+    background-color: #f1f5f8;
+    color: black;
+    border-radius: 10px;
+    border: solid green;
+  }
+  
+  .searchDiv {
+    text-align: center;
+    background-color: whitesmoke;
+  }
+  
+  img {
+    width: 100%;
+  }
+  
+  section {
+    background-color: white;
+  }
+  
+  .tabs {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .tab {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 15px 0;
+    letter-spacing: 4px;
+    background-color: #d8e2ed;
+    transition: all 0.3s linear;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .tab:hover {
+    background-color: black;
+    color: white;
+  }
+  
+  .active {
+    background-color: white;
+  }
+  
+  .drinks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+ 
+  .drinkLI {
+    width: 25%;
+    text-align: center;
+    border: 2px solid green;
+    border-radius: 8px;
+    margin: 5px;
+  }
+  
+  .item-text {
+    color: olivedrab;
+    font-weight: bold;
+  }
+  
+  .item-price {
+    color: purple;
+    font-weight: bold;
+  }
+  
+  ::placeholder {
+    color: green;
+    text-decoration: uppercase;
+  }
+  
+  @media (max-width: 768px) {
+    .tabs {
+      flex-direction: column;
+    }
+    h1 {
+      margin: 20px 0;
+    }
+  }
+  
+
+  .drinkLI {
+    list-style-type: none;
+    border: 2px solid #ffa260;
+    display: inline-block;
+    border-radius: 10px;
+    margin: 15px 25px;
+    position: relative;
+    cursor: pointer;
+    background-color: rgb(201, 179, 179);
+    transition: all 0.35s;
+}
